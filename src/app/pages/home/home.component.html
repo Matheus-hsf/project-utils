@@ -1,0 +1,24 @@
+<mat-toolbar color="primary" style="justify-content: center;">
+  <h1>
+    Welcome to Utils Project
+  </h1>
+</mat-toolbar>
+
+<div class="content">
+
+  <div>
+
+  </div>
+
+  <simple-card [title]="descDirective.title" [description]="descDirective.description" [imgSource]="descDirective.srcImage">
+
+  </simple-card>
+
+
+  <a [routerLink]="'directive-increase-scroll'">
+    Directive Increase Scroll
+  </a>
+
+  <button type="button" routerLink="/directive-increase-scroll">Directive Increase Scroll</button>
+
+</div>

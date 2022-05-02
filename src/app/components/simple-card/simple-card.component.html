@@ -1,0 +1,28 @@
+<div class="card">
+
+  <div class="card-header">
+
+    {{ title }}
+
+    <div style="display: flex; align-items: center; justify-content: center; margin-top: 10px;">
+      <img [src]="imgSource" class="card-image">
+    </div>
+
+  </div>
+
+  <div class="card-body">
+
+    <span>
+     {{ description }}
+    </span>
+
+    <div class="card-buttons">
+      <a [routerLink]="{{routeButton}}"
+              mat-flat-button	style="height: 30px; width: 90px; background-color: rgb(88, 183, 88);" >
+        Show
+    </a>
+    </div>
+
+  </div>
+
+</div>

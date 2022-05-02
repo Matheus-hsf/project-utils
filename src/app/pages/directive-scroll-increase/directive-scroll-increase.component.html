@@ -1,0 +1,54 @@
+<div class="holderContents">
+
+  <div class="explanation">
+
+    <div class="explanation-text">
+    <div>
+      <h5>
+      Its important to remember that the class that will apply the CSS to increase size of your custom scrollbar has to be on the CSS archive of the component where directive will be used, and declared like this:<br>
+       + more-widthX::-webkit-scrollbar <br>
+       + more-widthY::-webkit-scrollbar <br>
+      </h5>
+      <p>
+        Here we have two examples, in the first one we use the directive directly in the tag were the custom scroll will be;
+        In the second one, the directive is on a tag thats wrapper the tag with scroll, and to access the class to apply the directive we
+        have to pass the class name of the container that will render the scroll passing the input of the directive called elementClassName.
+      </p>
+    </div>
+
+    <div>
+      <h5>
+        É importante lembrar que a class que aplicará o CSS para aumentar o tamanho do scroll customizado tem que ser declada no arquivo CSS do componente que utilizar a diretiva, e deve ser declarado assim:<br>
+        + more-widthX::-webkit-scrollbar <br>
+        + more-widthY::-webkit-scrollbar <br>
+      </h5>
+      <p>
+        Aqui temos dois exemplos, no primeiro usamos a diretiva direto na tag onde o scroll customizado vai estar.
+        No segundo, a diretiva está em uma tag que encapsula a tag que contem o scroll customizado, e para acessar a classe para aplicar a
+        diretiva nós passaoms o nome da classe do tag que irá renderizar o scroll passando ela pelo input da diretiva chamado elementClassName.
+      </p>
+    </div>
+    </div>
+  </div>
+
+    <div style="display: flex; align-items: center; justify-content: space-evenly;">
+
+      <div class="container1" IncreaseScrollDirective>
+
+        <div class="cardExample" *ngFor="let item of contentX">
+          Name: {{ item.name }}  ------- Age: Name: {{ item.age }}
+        </div>
+
+      </div>
+
+      <div id="wrapper" IncreaseScrollDirective elementClassName=".container2">
+        <div class="container2" >
+            <div class="cardExample" *ngFor="let item of contentX">
+              Name: {{ item.name }}  ------- Age: Name: {{ item.age }}
+            </div>
+        </div>
+      </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,40 @@
+.card{
+  background-color: aliceblue;
+  min-height: 305px;
+  min-width: 200px;
+  max-height: 305px;
+  max-width: 200px;
+  border: solid 3px rgb(0, 0, 0, 15%);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 10px;
+}
+
+.card-header{
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  align-self: center;
+  max-height: 150px;
+}
+
+.card-image{
+  height: 125px;
+  width: 125px;
+  border: solid 1px black; border-radius: 10px;
+}
+
+.card-body{
+  display: grid;
+  grid-template-rows: auto 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.card-buttons{
+  margin-top: 10px;
+  align-self: center;
+  justify-self: center;
+}
